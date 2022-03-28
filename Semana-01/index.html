@@ -14,7 +14,6 @@
         </div>
     </header>
     <aside>
-        <nav>
         <div class="search">
             <img src="images/lupa.png"> 
             <input type="text" placeholder="Search">
@@ -31,6 +30,7 @@
                     <a href="#">Log in</a>
                 </li>
             </ul>
+        </div>
         <div class="touch">Get in touch</div>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non vel es
@@ -49,7 +49,7 @@
                     <a href="number">(000) 000-0000</a>
                 </li>
             </ul>
-        </nav> ver lo del nav si tabulear o borrar
+        </div>
     </aside>
     <main>
         <article>
@@ -70,26 +70,26 @@
             <div>
                 <h3>Record hours</h3>
                 <p>
-                    <img src="images/hour.png" align="left">Create, modify and delete projects and assign them to any employee/s.
+                    <img src="images/hour.png">Create, modify and delete projects and assign them to any employee/s.
                 </p>
             </div>
             <div>  
                 <h3>Generate reports</h3>
                 <p>
-                <img src="images/report.png" align="left">Emit reports to have a better view and understanding of all the projects.
+                <img src="images/report.png">Emit reports to have a better view and understanding of all the projects.
                 </p>
             </div>
             <div>  
                 <h3>Manage resources</h3>
                 <p>
-                <img src="images/resources.png" align="left">You will be able to see all the information you need to organize hours of work in the best way possible.
-            </p>
+                <img src="images/resources.png">You will be able to see all the information you need to organize hours of work in the best way possible.
+                </p>
             </div>
             <div>  
                 <h3>Designate roles</h3>
                 <p>
-                <img src="images/resources.png" align="left">Establish which employee may have a certain role in the project.
-            </p>
+                <img src="images/roles.png">Establish which employee may have a certain role in the project.
+                </p>
             </div>
         </article>
         <article>
@@ -101,9 +101,91 @@
                 <li>Company decisions</li>
             </ul>
         </article>
-        <form>
-
-        </form>
+        <section>
+            <form>
+                <div>
+                    <label for="bname">Bussines name:</label>
+                    <input type="text" id="bname" name="bname">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <p>Contact area</p>
+                    <input type="radio" id="hresources" name="contact-area" value="hresources">
+                    <label for="hresources">Human Resources</label><br>
+                    <input type="radio" id="commer" name="contact-area" value="commer">
+                    <label for="commer">Commercialization</label><br>
+                    <input type="radio" id="systems" name="contact-area" value="systems">
+                    <label for="systems">Systems</label>
+                </div>
+                <div>
+                    <label for="number">Phone number:</label>
+                    <input type="tel" id="number" name="number">
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="Msg" name="msg"></textarea>
+                </div>
+                <div>
+                <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <article>
+            <h2>Trackgenix history</h2>
+            <p>
+            <img src="images/history.png">Trackgenix was founded on April 1, 2014, by college dropouts James Bond and
+             Steve Pitt, who brought to the new company a vision of changing the way people viewed computers.
+            </p>
+            <p>
+            <img src="images/data.png">
+            <img src="images/effective.png">Objective : Providing the right solutions and getting products into 
+            customers' hands with the support of store team members.
+            </p>
+        </article>
+        <nav>
+            <div>
+                <ol>
+                    <h4>Products</h4>
+                    <li><a href="#">Functionalities</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Extras</a></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <h4>Business</h4>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <h4>Support</h4>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ol>
+            </div>
+         </nav>
     </main>
+    <footer>
+        <p>Rosario, Argentina</p>
+        <div class="redes-sociales">
+            <a href="#"><img src="images/linkedin.png"></a>
+            <a href="#"><img src="images/ig.png"></a>
+            <a href="#"><img src="images/fb.png"></a>
+            <a href="#"><img src="images/tw.png"></a>
+        </div>
+        <small>
+            Copyright © 2022 Radium Rocket. All rights reserved.
+        </small>
+    </footer>
 </body>
 </html>

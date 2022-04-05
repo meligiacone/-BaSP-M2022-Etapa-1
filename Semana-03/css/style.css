@@ -1,4 +1,9 @@
-    .header {
+    label {
+        display: block;
+        font-size: 14px;
+    }
+        
+        .header {
         display: inline-block;
         width: 1064px;
         height: 156px;
@@ -225,6 +230,7 @@
     h2 {
         font-size: 48px;
         font-weight: bold;
+        font-weight: 700;
     }
 
     .introduction > h2 {
@@ -237,6 +243,7 @@
         width: 426px ;
         height: 84px;
         font-style: italic;
+        font-weight: 300;
         font-size: 28px;
         margin-left: 25px;
         margin-top: 80px;
@@ -273,6 +280,7 @@
     .what-can-you-do > h2 {
         width: 800px;
         font-size: 48px;
+        font-weight: 500;
         margin-top: 70px;
         margin-left: 125px;
         border-bottom: 5px solid #AACE9B;
@@ -292,9 +300,8 @@
     }
 
     .to-do-box img {
-        width: 100px;
-        height: 100px;
-        background-color: #9e9e9e;
+        width: 160px;
+        height: 180px;
         margin-left: 30px;
         margin-top: 30px;
     }
@@ -307,7 +314,7 @@
 
     .content-box p {
         font-size: 28px;
-        font-weight: 3s00;
+        font-weight: 300;
         line-height: 42px;
         padding-top: 10px;
     }
@@ -315,36 +322,139 @@
     .why-use > h2 {
         width: 920px;
         font-size: 48px;
+        font-weight: 500;
         margin-top: 70px;
         margin-left: 10px;
         border-bottom: 5px solid #AACE9B;
         padding-bottom: 30px ;
     }
 
-    .why-use ul li {
+    .list-box-1 {
         padding-top: 40px;
         padding-left: 72px;
         font-size: 28px;
         font-weight: 300;
         line-height: 42px;
+        list-style-type: '✓';
+    }
+
+    .list-item-box-1 {
+        padding-left: 30px;
+        padding-top: 30px;
     }
 
     .contact-form > h2 {
         width: 920px;
         font-size: 48px;
-        margin-top: 70px;
+        font-weight: 500;
+        margin-top: 90px;
         margin-left: 10px;
         border-bottom: 5px solid #AACE9B;
-        padding-bottom: 30px ;
+        padding-bottom: 40px ;
      }
 
-     
+     #contact-form {
+         width: 1021px;
+         height: 550px;
+         margin-left: 20px;
+         margin-top: 20px;
+         background-color: #Ffffff;
+    }
+    
+    .content-form {
+        display: inline-block;
+    
+        width: 43%;
+    }
 
+    .text-input-form-bname {
+        width: 317px;
+        height: 43px;
+        margin-top: 20px;
+        margin-left: 90px;
+        border-radius: 2px;
+        border: 1px solid #9e9e9e;
+     }
 
+     .label-bname {
+        position: relative;
+        top: 10px;
+        margin-left: 100px;
+     }
 
+     .text-input-form-email {
+        width: 317px;
+        height: 43px;
+        margin-top: 90px;
+        margin-left: 90px;
+        border-radius: 2px;
+        border: 1px solid #9e9e9e;
+     }
 
+     .label-email {
+        position: relative;
+        top: 80px;
+        margin-left: 100px;
+     }
 
+     .contact-area-p {
+         margin-top: 29px;
+         margin-left: 100px;
+         margin-bottom: 20px;
+     }
 
+     .radio-label {
+        display: inline;
+        margin-top: 30px;
+        margin-left: 90px;
+        line-height: 30px;
+    }
+    .radio-input {
+        position: relative;
+        left:80px;
+        
+    }
+    
+
+    .label-number {
+        margin-bottom: 10px;
+        margin-left: 100px;
+     }
+
+     .input-number {
+        width: 317px;
+        height: 43px;
+        margin-left: 90px;
+        border-radius: 2px;
+        border: 1px solid #9e9e9e;
+     }
+
+     .label-msg {
+        margin-top: 20px;
+        margin-left: 100px;
+
+     }
+
+     .textarea-msg {
+         width: 760px;
+         height: 100px;
+         margin-top: 10px;
+         margin-left: 90px;
+         border-radius: 2px;
+         border: 1px solid #9e9e9e;
+     }
+
+    .submit-form {
+        position: relative;
+        left: 140px;
+        width: 158px;
+        height: 36px;
+        font-size:18px;
+        margin-top: 20px;
+        margin-left: 556px;
+        border: 1px solid #373867;
+        background-color: #AACE9B;
+    }
 
     
     

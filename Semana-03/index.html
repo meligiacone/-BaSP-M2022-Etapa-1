@@ -13,6 +13,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
         <title>Trackgenix</title>
     </head>
     <body>
@@ -85,7 +91,7 @@
                             Create, modify and delete projects and assign them to any employee/s.
                         </p>
                     </div>
-                    <img src="images/hour.png" alt="hour">
+                    <img src="images/records.png" alt="hour">
                 </div>  
                 <div class="to-do-box">
                     <div class="content-box">
@@ -94,7 +100,7 @@
                             Emit reports to have a better view and understanding of all the projects.
                         </p>
                     </div>
-                    <img src="images/report.png" alt="report">
+                    <img src="images/reports.png" alt="report">
                 </div>  
                 <div class="to-do-box">  
                     <div class="content-box">
@@ -117,43 +123,49 @@
             </section>
             <section class="why-use">
                 <h2>Why use Trackgenix?</h2>
-                <ul>
-                    <li>Increase your productivity</li>
-                    <li>Track your work</li>
-                    <li>Leadership and team management</li>
-                    <li>Company decisions</li>
+                <ul class="list-box-1">
+                    <li class="list-item-box-1">Increase your productivity</li>
+                    <li class="list-item-box-1">Track your work</li>
+                    <li class="list-item-box-1">Leadership and team management</li>
+                    <li class="list-item-box-1">Company decisions</li>
                 </ul>
             </section>
             <section class="contact-form">
                 <h2>Contact Form</h2>
-                <form>
-                    <div class="bussines-name">
-                        <label for="bname">Bussines name:</label>
-                        <input type="text" id="bname" name="bname">
+                <form id="contact-form">
+                    <div class="content-form">
+                        <label class="label-bname" for="bname">Bussines name:</label>
+                        <input class="text-input-form-bname" type="text" name="bname">
                     </div>
-                    <div class="email">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
+                    <div class="content-form">
+                        <label class="label-email" for="email">Email:</label>
+                        <input class="text-input-form-email" type="email" name="email">
                     </div>
-                    <div class="contact-area">
-                        <p>Contact area</p>
-                        <input type="radio" id="hresources" name="contact-area" value="hresources">
-                        <label for="hresources">Human Resources</label>
-                        <input type="radio" id="commer" name="contact-area" value="commer">
-                        <label for="commer">Commercialization</label>
-                        <input type="radio" id="systems" name="contact-area" value="systems">
-                        <label for="systems">Systems</label>
+                    <div class="content-form">
+                        <p class="contact-area-p">Contact area</p>
+                        <div>
+                            <input class="radio-input" type="radio" name="contact-area" value="hresources">
+                            <label class="radio-label" for="hresources">Human Resources</label>
+                        </div>
+                        <div>
+                            <input class="radio-input" type="radio" name="contact-area" value="commer">
+                            <label class="radio-label" for="commer">Commercialization</label>
+                        </div>
+                        <div>
+                            <input class="radio-input" type="radio" name="contact-area" value="systems">
+                            <label class="radio-label" for="systems">Systems</label>
+                        </div>
                     </div>
-                    <div class="number">
-                        <label for="number">Phone number:</label>
-                        <input type="tel" id="number" name="number">
+                    <div class="content-form">
+                        <label class="label-number" for="number">Phone number:</label>
+                        <input class="input-number" type="tel" id="number" name="number">
                     </div>
-                    <div class="msg">
-                        <label for="msg">Message:</label>
-                        <textarea id="Msg" name="msg"></textarea>
+                    <div class="content-form">
+                        <label class="label-msg" for="msg">Message:</label>
+                        <textarea class="textarea-msg" name="msg"></textarea>
                     </div>
-                    <div class="submit">
-                    <input type="submit" value="Submit">
+                    <div>
+                        <input class="submit-form" type="submit" value="Submit">
                     </div>
                 </form>
             </section>

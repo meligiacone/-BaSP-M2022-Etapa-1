@@ -1,15 +1,48 @@
-    label {
-        display: block;
-        font-size: 14px;
-    }
-      
     header {
         position: fixed;
         background-color: #fff;
     }
+    
+    aside {
+        position:fixed;
+        width: 376px;
+        height: 1023px;
+        left: 0;
+        top: 0;
+        font-family: 'Raleway', sans-serif;
+        border:1px solid #000000;
+        background-color: #FAFAFA;
+    }
 
     main {
+        display: inline-block;
+        margin-left: 376px;
         margin-top: 110px;
+        padding-bottom: 90px;
+        font-family: 'Roboto', sans-serif;
+        background-color: #FAFAFA;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: bold;
+        font-weight: 700;
+    }
+
+    h3{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 3px solid #AACE9B;
+    }
+
+    label {
+        display: block;
+        font-size: 14px;
     }
 
     footer {
@@ -25,6 +58,15 @@
         line-height: 20px;
     }
 
+    #contact-form {
+        width: 1021px;
+        height: 550px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: #Ffffff;
+   }
+
+   /* Header */ 
 
     .header {
         display: inline-block;
@@ -56,18 +98,6 @@
         max-width: 867px;
         padding: 0px;
         margin: -20px 0px 0px 497px;
-    }
-    
-    aside
-   {
-    position:fixed;
-    width: 376px;
-    height: 1023px;
-    left: 0;
-    top: 0;
-    font-family: 'Raleway', sans-serif;
-    border:1px solid #000000;
-    background-color: #FAFAFA;
     }
 
     .search
@@ -142,8 +172,6 @@
         text-decoration: none;
         color: #545454;
     }
-
-
 
     .log-in {
             width: 272px;
@@ -241,20 +269,9 @@
         padding-right: 15px ;
     }
 
-    main {
-        display: inline-block;
-        margin-left: 376px;
-        font-family: 'Roboto', sans-serif;
-        background-color: #FAFAFA;
+    /* Main */
 
-    }
-   
-
-    h2 {
-        font-size: 48px;
-        font-weight: bold;
-        font-weight: 700;
-    }
+    /* Section: Welcome */
 
     .introduction > h2 {
         width: 413px;
@@ -300,6 +317,8 @@
         background-color: #AACE9B;
     }
 
+    /* Section: What can you do ? */
+
     .what-can-you-do > h2 {
         width: 800px;
         font-size: 48px;
@@ -308,11 +327,6 @@
         margin-left: 125px;
         border-bottom: 5px solid #AACE9B;
         padding-bottom: 5px ;
-    }
-
-    h3{
-        font-size: 28px;
-        font-weight: bold;
     }
 
     .to-do-box {
@@ -342,6 +356,8 @@
         padding-top: 10px;
     }
 
+    /* Section: Why use Trackgenix ? */
+
     .why-use > h2 {
         width: 920px;
         font-size: 48px;
@@ -366,6 +382,8 @@
         padding-top: 30px;
     }
 
+    /* Section: Contact Form */
+
     .contact-form > h2 {
         width: 920px;
         font-size: 48px;
@@ -375,14 +393,6 @@
         border-bottom: 5px solid #AACE9B;
         padding-bottom: 40px ;
      }
-
-     #contact-form {
-         width: 1021px;
-         height: 550px;
-         margin-left: 20px;
-         margin-top: 20px;
-         background-color: #Ffffff;
-    }
     
     .content-form {
         display: inline-block;
@@ -476,6 +486,8 @@
         background-color: #AACE9B;
     }
 
+    /* Section: History Trackgenix */
+
     .history-trackgenix {
         width: 940px;
         height: 650px;
@@ -558,6 +570,8 @@
         line-height: 15px;
     }
 
+    /* Section: Navigation bar */
+
     .nav-bar {
         display: inline-block;
         width: 30%;
@@ -566,13 +580,6 @@
         margin-top: 50px;
         margin-left: 30px;
     }
-
-    h4 {
-        font-size: 24px;
-        font-weight: bold;
-        border-bottom: 3px solid #AACE9B;
-    }
-
 
     .nav-bar ol li {
         list-style-type: decimal;
@@ -584,6 +591,8 @@
         text-decoration: none;
         color: #000;
     }
+
+    /* Footer */
 
     .redes-sociales-img {
         width: 25px;

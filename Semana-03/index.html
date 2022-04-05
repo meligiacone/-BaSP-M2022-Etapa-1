@@ -7,30 +7,37 @@
         <meta name="author" content="melinabgiacone@gmail.com">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
         <title>Trackgenix</title>
     </head>
     <body>
         <header>
-            <div class="icon">
+            <div class="header">
                 <span>&#9776;</span>
                 <h1>Trackgenix SA</h1>
             </div>
+            <div class="line"></div>
         </header>
         <aside>
             <div class="search">
-                <img src="images/lens.png" alt="magnifying glass"> 
-                <input type="text" placeholder="Search">
+                <img src="images/lens.png" class="img-len" alt="magnifying glass"> 
+                <input type="text"  class="input-search" placeholder="Search">
             </div>
             <div class="menu">
-                <span>Menu</span>
+                <p>Menu</p>
                 <ul>
-                    <li>
+                    <li class="home">
                         <a href="#">Home</a>
                     </li>
-                    <li>
+                    <li class="sign-up">
                         <a href="#">Sign up</a>
                     </li>
-                    <li>
+                    <li class="log-in">
                         <a href="#">Log in</a>
                     </li>
                 </ul>
@@ -43,63 +50,72 @@
                     exercitationem deserunt facere debitis?
                 </p>
                 <ul>
-                    <li>
-                        <img src="images/mail.png" alt="email">
+                    <li class="mail">
+                        <img src="images/mail.png" class="img-mail" alt="email">
                         <a href="mailito:information@trackgenix.tld">information@trackgenix.tld</a>
                     </li>
-                    <li>
-                        <img src="images/address.png" alt="address">
+                    <li class="address">
+                        <img src="images/address.png" class="img-address" alt="address">
                         <a href="address">1234 Somewhere Road #8254 Nashville, TN 00000-0000</a>
                     </li>
-                    <li>
-                        <img src="images/number.png" alt="phone number">
+                    <li class="number">
+                        <img src="images/number.png" class="img-number" alt="phone number">
                         <a href="number">(000) 000-0000</a>
                     </li>
                 </ul>
             </div>
+            </div>
         </aside>
         <main>
-            <section>
+            <section class="introduction">
+                <img src="images/clock.png" alt="clock">
                 <h2>Welcome to Trackgenix!</h2>
                 <h3>A free website for everyone at Trackgenix!</h3>
                 <p>
                     Here, you can register the hours worked in any project for all employees,generate reports and much more.
                 </p>
-                <img src="images/clock.png" alt="clock">
                 <input type="button" value="LEARN MORE">
             </section>
-            <section>
+            <section class="what-can-you-do">
                 <h2>What can you do?</h2>
-                <div class="record-hours">
-                    <h3>Record hours</h3>
-                    <p>
-                        Create, modify and delete projects and assign them to any employee/s.
-                    </p>
+                <div class="to-do-box">
+                    <div class="content-box">
+                        <h3>Record hours</h3>
+                        <p>
+                            Create, modify and delete projects and assign them to any employee/s.
+                        </p>
+                    </div>
                     <img src="images/hour.png" alt="hour">
-                </div>
-                <div class="generate-reports">  
-                    <h3>Generate reports</h3>
-                    <p>
-                        Emit reports to have a better view and understanding of all the projects.
-                    </p>
+                </div>  
+                <div class="to-do-box">
+                    <div class="content-box">
+                        <h3>Generate reports</h3>
+                        <p>
+                            Emit reports to have a better view and understanding of all the projects.
+                        </p>
+                    </div>
                     <img src="images/report.png" alt="report">
-                </div>
-                <div class="manage-resources">  
-                    <h3>Manage resources</h3>
-                    <p>
-                        You will be able to see all the information you need to organize hours of work in the best way possible.
-                    </p>
+                </div>  
+                <div class="to-do-box">  
+                    <div class="content-box">
+                        <h3>Manage resources</h3>
+                        <p>
+                            You will be able to see all the information you need to organize hours of work in the best way possible.
+                        </p>
+                    </div>
                     <img src="images/resources.png" alt="resources">
                 </div>
-                <div class="designate-roles"> 
-                    <h3>Designate roles</h3>
-                    <p>
-                        Establish which employee may have a certain role in the project.
-                    </p>
+                <div class="to-do-box">
+                    <div class="content-box">
+                        <h3>Designate roles</h3>
+                        <p>
+                            Establish which employee may have a certain role in the project.
+                        </p>
+                    </div>
                     <img src="images/roles.png" alt="roles">
                 </div>
             </section>
-            <section>
+            <section class="why-use">
                 <h2>Why use Trackgenix?</h2>
                 <ul>
                     <li>Increase your productivity</li>
@@ -108,7 +124,8 @@
                     <li>Company decisions</li>
                 </ul>
             </section>
-            <section>
+            <section class="contact-form">
+                <h2>Contact Form</h2>
                 <form>
                     <div class="bussines-name">
                         <label for="bname">Bussines name:</label>

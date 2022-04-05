@@ -363,7 +363,6 @@
     
     .content-form {
         display: inline-block;
-    
         width: 43%;
     }
 
@@ -412,10 +411,8 @@
     .radio-input {
         position: relative;
         left:80px;
-        
-    }
+     }
     
-
     .label-number {
         margin-bottom: 10px;
         margin-left: 100px;
@@ -455,6 +452,124 @@
         border: 1px solid #373867;
         background-color: #AACE9B;
     }
+
+    .history-trackgenix {
+        width: 940px;
+        height: 650px;
+        margin-left: 30px;
+        margin-top: 50px;
+        background-color: #D9E0D6;
+        border-radius: 50%;
+        border: 2px solid #Ffffff;
+    }
+
+    .tittle-history {
+        width: 30%;
+        font-size: 40px;
+        margin-left: 150px;
+        padding-top: 164px; 
+        padding-right: 30px;
+        border-right: 4px solid white;
+        color: #756464;
+        text-align: right;
+    }
+
+    .history-p {
+        width: 300px;
+        height: 52px;
+        font-size: 10px;
+        line-height: 15px;
+        margin-left: 150px;
+        margin-top: 34px;
+    }
+
+    .history-img {
+        margin-left: 550px;
+        margin-top: -200px;
+        background-color: #7c4dff;
+        border-radius: 50%;
+    }
+
+    .content-history {
+        display: inline-block;
+    }
+
+    .content-data {
+        width: 78px;
+        height: 78px;
+        font-size: 6px;
+        font-style: normal #fff;
+        margin-left: 250px;
+        margin-top: 100px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        text-align: center;
+        color: #Ffffff;
+     }
+
+     .content-effective {
+        width: 78px;
+        height: 78px;
+        font-size: 6px;
+        font-style: normal #fff;
+        margin-left: 350px;
+        margin-top: -200px;
+        border: 2px solid #fff;
+        border-radius: 100%;
+        text-align: center;
+        color: #Ffffff;
+    }
+
+     .img-data-history{
+        padding-top: 19px;
+    }
+
+    .objective { 
+        width: 240px;
+        height: 190px;
+        margin-top: -83px;
+        margin-left: 470px;
+        padding-left: 40px;
+        border-left: 4px solid white;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .nav-bar {
+        display: inline-block;
+        width: 30%;
+        font-size: 18px;
+        line-height: 60px;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 3px solid #AACE9B;
+    }
+
+
+    .nav-bar ol li {
+        list-style-type: decimal;
+        margin-left: 50px;
+
+    }
+
+    .nav-bar ol li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+ 
+    
+   
+        
+      
+
+    
+
 
     
     

@@ -5,22 +5,21 @@
     
     aside {
         position:fixed;
-        width: 376px;
-        height: 1023px;
-        left: 0;
-        top: 0;
-        font-family: 'Raleway', sans-serif;
-        border:1px solid #000000;
+        width: 25%;
+        height: 100vh;
         background-color: #FAFAFA;
+        border:1px solid #000000;
+        font-family: 'Raleway', sans-serif;
     }
 
     main {
         display: inline-block;
-        margin-left: 376px;
+        width:75%;
+        margin-left: 25%;
         margin-top: 110px;
         padding-bottom: 90px;
-        font-family: 'Roboto', sans-serif;
         background-color: #FAFAFA;
+        font-family: 'Roboto', sans-serif;
     }
 
     h2 {
@@ -35,9 +34,9 @@
     }
 
     h4 {
+        border-bottom: 3px solid #AACE9B;
         font-size: 24px;
         font-weight: bold;
-        border-bottom: 3px solid #AACE9B;
     }
 
     label {
@@ -48,14 +47,15 @@
     footer {
         position: fixed;
         bottom:0px;
-        left: 380px;
-        width: 1064px;
+        left: 25%;
+        width: 75%;
         height: 90px;
-        background-color: #fff;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
         line-height: 20px;
+        text-align: center;
+        background-color: #fff;
+        border-left: 1px solid #000;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
     }
 
     #contact-form {
@@ -66,14 +66,17 @@
         background-color: #Ffffff;
    }
 
-   /* Header */ 
+   /* Header */
+
 
     .header {
         display: inline-block;
         width: 1064px;
-        height: 130px;
-        margin-left: 376px;
+        height: 110px;
+        margin-left: 380px;
     }
+    
+    
 
     .header > span {
                     display:inline-block;
@@ -93,11 +96,11 @@
                 }
 
     .line {
-        border-top: 2px solid #AACE9B;
         height: 3px;
-        max-width: 867px;
-        padding: 0px;
-        margin: -20px 0px 0px 497px;
+        max-width: 870px;
+        padding-top: 5px;
+        margin-left: 490px;
+        border-top: 2px solid #AACE9B;
     }
 
     .search
@@ -134,93 +137,78 @@
     
 
     .menu > p {
-        color: #000000;
         width: 86px;
-        font-size: 24px;
-        font-weight: bold;
         margin-top: 120px;
         margin-left: 44px;
-        border-bottom: 5px solid #AACE9B;
         padding-bottom: 12px;
+        border-bottom: 5px solid #AACE9B;
+        font-size: 24px;
+        font-weight: bold;
     }
 
     .home {
             width: 272px;
-            font-size: 18px; 
-            border-bottom: solid 1px #a4a4a4;
             padding-bottom: 2px;
             margin-top: 23px;
             margin-left: 44px;
+            border-bottom: solid 1px #a4a4a4;
+            font-size: 18px; 
     }
 
-    .home a {
+    .home a , .sign-up a , .log-in a , .mail a , .address a , .number a {
         text-decoration: none;
         color: #545454;
     }
 
     .sign-up {
-            width: 272px;
-            color: #545454;
-            font-size: 18px; 
-            border-bottom: solid 1px #a4a4a4;
+            width: 272px; 
             padding-bottom: 2px;
             margin-top: 33px;
             margin-left: 44px;
-    }
-
-    .sign-up a {
-        text-decoration: none;
-        color: #545454;
+            border-bottom: solid 1px #a4a4a4;
+            font-size: 18px;
+            color: #545454;
     }
 
     .log-in {
             width: 272px;
-            color: #545454;
-            font-size: 18px;
             margin-top: 33px;
             margin-left: 44px;
-            border-bottom: solid 1px #a4a4a4;
             padding-bottom: 30px;
             margin-bottom: 20px;
+            border-bottom: solid 1px #a4a4a4;
+            font-size: 18px;
+            color: #545454;
 
     }
 
-    .log-in a {
-        text-decoration: none;
-        color: #545454;
-    }
-
+    
     .touch > span {
-        color: #000000;
         width: 179px;
+        margin-left: 44px;
+        padding: 2px;
+        border-bottom: 5px solid #AACE9B;
         font-size: 24px;
         font-weight: bold;
-        margin-left: 44px;
-        border-bottom: 5px solid #AACE9B;
-        padding: 2px;
+        color: #000000;
     }
 
     .touch > p {
         width: 279px;
         height: 147px;
-        color: #545454;
-        font-size: 17px;
         margin-left: 44px;
         margin-top: 33px;
+        font-size: 17px;
+        color: #545454;
     }
 
     .mail {
-        width: 280px;
-        font-size: 18px; 
-        border-bottom: solid 1px #a4a4a4;
+        width: 280px; 
         padding-bottom: 20px;
         margin-top: 10px;
         margin-left: 44px;
-}
-
-    .mail a {
-        text-decoration: none;
-        color: #545454;
+        border-bottom: solid 1px #a4a4a4;
+        font-size: 18px;
 }
 
     .img-mail {
@@ -231,17 +219,12 @@
 
     .address {
         width: 280px;
-        font-size: 18px; 
-        border-bottom: solid 1px #a4a4a4;
         padding-bottom: 20px;
         margin-top: 10px;
         margin-left: 44px;
-}
-
-    .address a {
-        text-decoration: none;
-        color: #545454;
-}
+        border-bottom: solid 1px #a4a4a4;
+        font-size: 18px; 
+    }
 
     .img-address {
         width: 33px;
@@ -251,16 +234,11 @@
 
     .number {
         width: 280px;
-        font-size: 18px; 
-        border-bottom: solid 1px #a4a4a4;
         padding-bottom: 20px;
         margin-top: 10px;
         margin-left: 44px;
-}
-
-    .number a {
-        text-decoration: none;
-        color: #545454;
+        border-bottom: solid 1px #a4a4a4;
+        font-size: 18px;
 }
 
     .img-phone {
@@ -276,26 +254,26 @@
     .introduction > h2 {
         width: 413px;
         margin-left: 15px;
-        margin-top: 36px;
+        margin-top: 20px;
         }
 
     .introduction > h3 {
         width: 426px ;
         height: 84px;
+        margin-left: 25px;
+        margin-top: 80px;
         font-style: italic;
         font-weight: 300;
         font-size: 28px;
-        margin-left: 25px;
-        margin-top: 80px;
     }
 
     .introduction > p {
         width: 557px;
         height: 180px;
-        font-size: 24px;
-        color: #8c8c8c;
         margin-left: 15px;
         margin-top: 76px;
+        font-size: 24px;
+        color: #8c8c8c;
     }
 
     .introduction > img {
@@ -309,24 +287,25 @@
         width: 144px;
         height: 50px;
         font-size: 13px;
-        color: #373867;
-        border-radius: 4px;
         margin-left: 10px;
         margin-top: 33px;
-        border: 1px solid #373867;
         background-color: #AACE9B;
+        border-radius: 4px;
+        border: 1px solid #373867;
+        font-size: 13px;
+        color: #373867;
     }
 
     /* Section: What can you do ? */
 
     .what-can-you-do > h2 {
         width: 800px;
-        font-size: 48px;
-        font-weight: 500;
         margin-top: 70px;
         margin-left: 125px;
-        border-bottom: 5px solid #AACE9B;
         padding-bottom: 5px ;
+        border-bottom: 5px solid #AACE9B;
+        font-size: 48px;
+        font-weight: 500;
     }
 
     .to-do-box {
@@ -350,22 +329,22 @@
     }
 
     .content-box p {
+        padding-top: 10px;
+        line-height: 42px;
         font-size: 28px;
         font-weight: 300;
-        line-height: 42px;
-        padding-top: 10px;
     }
 
     /* Section: Why use Trackgenix ? */
 
     .why-use > h2 {
         width: 920px;
-        font-size: 48px;
-        font-weight: 500;
         margin-top: 70px;
         margin-left: 10px;
-        border-bottom: 5px solid #AACE9B;
         padding-bottom: 30px ;
+        border-bottom: 5px solid #AACE9B;
+        font-size: 48px;
+        font-weight: 500;
     }
 
     .list-box-1 {
@@ -386,12 +365,12 @@
 
     .contact-form > h2 {
         width: 920px;
-        font-size: 48px;
-        font-weight: 500;
         margin-top: 90px;
         margin-left: 10px;
-        border-bottom: 5px solid #AACE9B;
         padding-bottom: 40px ;
+        border-bottom: 5px solid #AACE9B;
+        font-size: 48px;
+        font-weight: 500;
      }
     
     .content-form {
@@ -475,16 +454,16 @@
      }
 
     .submit-form {
-        position: relative;
-        left: 140px;
         width: 158px;
         height: 36px;
-        font-size:18px;
-        margin-top: 20px;
-        margin-left: 556px;
-        border: 1px solid #373867;
+        margin-left: 700px;
+        margin-top: 10px;
         background-color: #AACE9B;
+        border-radius: 2px;
+        border: 1px solid #373867;
+        font-size: 18px;
     }
+
 
     /* Section: History Trackgenix */
 
@@ -500,22 +479,22 @@
 
     .tittle-history {
         width: 30%;
-        font-size: 40px;
         margin-left: 150px;
         padding-top: 164px; 
         padding-right: 30px;
         border-right: 4px solid white;
-        color: #756464;
+        font-size: 40px;
         text-align: right;
+        color: #756464;
     }
 
     .history-p {
         width: 300px;
         height: 52px;
-        font-size: 10px;
-        line-height: 15px;
         margin-left: 150px;
         margin-top: 34px;
+        font-size: 10px;
+        line-height: 15px;
     }
 
     .history-img {
@@ -532,12 +511,12 @@
     .content-data {
         width: 78px;
         height: 78px;
-        font-size: 6px;
-        font-style: normal #fff;
         margin-left: 250px;
         margin-top: 100px;
         border: 2px solid #fff;
         border-radius: 100%;
+        font-size: 6px;
+        font-style: normal #fff;
         text-align: center;
         color: #Ffffff;
      }
@@ -545,12 +524,12 @@
      .content-effective {
         width: 78px;
         height: 78px;
-        font-size: 6px;
-        font-style: normal #fff;
         margin-left: 350px;
         margin-top: -200px;
         border: 2px solid #fff;
         border-radius: 100%;
+        font-size: 6px;
+        font-style: normal #fff;
         text-align: center;
         color: #Ffffff;
     }
@@ -575,10 +554,10 @@
     .nav-bar {
         display: inline-block;
         width: 30%;
-        font-size: 18px;
-        line-height: 60px;
         margin-top: 50px;
         margin-left: 30px;
+        font-size: 18px;
+        line-height: 60px;
     }
 
     .nav-bar ol li {
@@ -594,7 +573,7 @@
 
     /* Footer */
 
-    .redes-sociales-img {
+    .social-media-img {
         width: 25px;
         height: 25px;
         margin-left: 20px;

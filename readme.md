@@ -4,6 +4,16 @@
 ``` 
 Trackgenix is a project belongs to Trackgenix SA company. This project consists in a software  that facilitates the registration of worked hours by each employee in each project and work team.
 ```
+## Week 02
+
+HTML code was write to made the Landing Page structure.
+
+
+## Week 02
+
+CSS was made to give style to the web, corresponding to the HTML structure.
+
+
 ## Installation
 This software does not need to be installed, since it is running online.
 ## Repository

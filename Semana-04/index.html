@@ -6,28 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="melinabgiacone@gmail.com">
         <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/sidebar.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <title>Trackgenix</title>
     </head>
     <body>
         <header>
-            <div class="brand">
-                <span>&#9776;</span>
-                <h1>Trackgenix SA</h1>
-            </div>
-            <div class="line"></div>
+             <div class="brand">
+                <div class="icon">
+                    <img src="images/burguer.png" alt="Burger-menu">
+                </div>
+                <div class="tittle">
+                    <h1>Trackgenix SA</h1>
+                </div>
+             </div>
         </header>
         <aside>
             <div class="search">
@@ -73,14 +77,20 @@
             </div>
         </aside>
         <main>
-            <section class="introduction">
-                <img src="images/clock.png" alt="clock">
+            <div>
+            <section class="welcome">
+                <div class="h2">
                 <h2>Welcome to Trackgenix!</h2>
+                </div>
+            <div class="h3-img">
                 <h3>A free website for everyone at Trackgenix!</h3>
-                <p>
+                <img src="images/clock.png" alt="clock">
+            </div>
+                <p class="introduction">
                     Here, you can register the hours worked in any project for all employees,generate reports and much more.
                 </p>
                 <input type="button" value="LEARN MORE">
+            
             </section>
             <section class="what-can-you-do">
                 <h2>What can you do?</h2>
@@ -221,6 +231,7 @@
                     </ol>
                 </div>
             </nav>
+            </div>
         </main>
         <footer>
             <p>Rosario, Argentina</p>

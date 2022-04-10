@@ -128,3 +128,130 @@ main {
 }
 
 /* Section: Contact Form */
+
+
+.content-form-number {
+    display: none;
+}
+
+#contact-form {
+    width: 380px;
+    height: 515px;
+    background-color: #D9E0D6;
+    border: 4px solid #c4c4c4;
+    margin-top: 36px;
+    align-self: center;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    font-weight: bold;
+    width: max-content;
+    margin-left: 4px;
+    margin-top: 40px;
+    border-bottom: 5px solid #AACE9B;
+    padding: 11px;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.text-input-form {
+    width: 317px;
+    height: 43px;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+    margin: 0px 20px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.label-bname , .label-email , .contact-area-p , .label-msg {
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 20px;
+}
+
+.content-form {
+    margin-top: 25px;
+}
+
+.radio-input {
+    margin-left: 20px;
+}
+
+.radio-label {
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 20px;
+    color: #000;
+}
+
+.textarea-msg {
+    width: 317px;
+    height: 111px;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.submit-form {
+    width: 95px;
+    height: 42px;
+    background-color: #AACE9B;
+    border-radius: 2px;
+    border: 1px solid #373867;
+    font-size: 18px;
+    margin-left: 140px;
+    margin-top: 10px;
+}
+
+
+
+/* Section: Trackgenix History and navigation bar */
+
+
+.history-img , .content-data , .content-effective {
+    display: none;
+}
+
+.history-trackgenix h2 , .objective , h4 { 
+    font-size: 30px;
+    font-weight: bold;
+    width: max-content;
+    margin-left: 4px;
+    margin-top: 40px;
+    border-bottom: 5px solid #AACE9B;
+    padding: 11px;
+}
+
+.history-p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 23px;
+    margin-left: 4px;
+}
+
+.nav-bar ol li {
+    list-style-type: decimal;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 10px;
+
+}
+
+.nav-bar ol li a {
+    text-decoration: none;
+    color: #373867;
+}

@@ -1,10 +1,19 @@
 header {
     position: fixed;
     width: 100vw;
-    height: 9%;
+    height: 70px;
     background-color: #EDEDED;
     border-bottom: 5px solid #aace9b;
     }
+
+h1 {
+    margin-left: 17px;
+    font-size: 40px;
+    font-weight: bold;
+    font-weight: 700;
+    color: #373867;    
+}
+
 
 .brand {
         display: flex;
@@ -13,15 +22,7 @@ header {
     }
 
 .icon img {
-    cursor: pointer;
     margin-left: 26px;
+    cursor: pointer;
 }
-    
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    font-weight: 700;
-    color: #373867;
-    margin-left: 17px;
-    }
 

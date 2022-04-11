@@ -1,24 +1,23 @@
 footer {
-    background-color: #ededed;
-    border-top: 5px solid #aace9b;
-    height: 15%;
     display: flex;
     flex-direction: column;
+    height: 100px;
+    background-color: #ededed;
+    border-top: 5px solid #aace9b;
+}
+
+footer p {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #545454;
+    line-height: 20px;
 }
 
 
 .social-media-img {
     width: 25px;
     margin-left: 20px;
-}
-
-footer p {
-    font-size: 10px;
-    color: #545454;
-    line-height: 20px;
-    align-self: center;
-    margin-top: 10px;
-
 }
 
 .social-media {

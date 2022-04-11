@@ -1,3 +1,117 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+main {
+    width: 100vw;
+    padding-top: 70px;
+    color: #373867;
+}
+
+.what-can-you-do h2 , .why-use h2 , .contact-form h2 , .history-trackgenix h2 , .objective , h4 {
+    width: max-content;
+    margin-left: 4px;
+    margin-top: 40px;
+    padding: 11px;
+    border-bottom: 5px solid #AACE9B;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Sidebar */
+
+    aside {
+    position:fixed;
+    width: 25vw;
+    height: 100vh;
+    background-color: #FAFAFA;
+    border:1px solid #000000;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+    }
+
+    .container-sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search > input::placeholder {
+        padding-left: 20px ;
+    }
+
+    .img-len {
+        width: 13%;
+        z-index: 1;
+    }
+
+    .input-search
+    {  
+        width: 150px;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-image: url(images/lens.png);
+        background-size: contain;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+        margin-top: 20px;
+        line-height: 40px;
+    }
+    .menu > p {
+        border-bottom: 3px solid #AACE9B;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .home , .sign-up , .log-in {
+            border-bottom: solid 1px #a4a4a4;
+            font-size: 18px; 
+    }
+
+    .home a , .sign-up a , .log-in a , .mail a , .address a , .number a {
+        text-decoration: none;
+        color: #373867;
+    }
+
+    .touch {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15px;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+
+    .touch > span {
+        border-bottom: 3px solid #AACE9B;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+
+    .touch > p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .mail , .address ,  .number  {
+        border-bottom: solid 1px #a4a4a4;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        line-height: 15px;
+
+}
+
+    .img-mail , .img-address , .img-number {
+        width: 20px;
+        height: 15px;
+        padding-right: 2px ;
+    }

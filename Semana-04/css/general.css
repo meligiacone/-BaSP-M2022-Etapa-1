@@ -40,7 +40,10 @@ main {
     }
 
     .img-len {
-        width: 13%;
+        position: absolute;
+        width: 20px;
+        margin-top: 17px;
+        margin-left: 15px;
         z-index: 1;
     }
 
@@ -52,8 +55,6 @@ main {
         margin-top: 10px;
         border: 1px solid #000000;
         border-radius: 5px;
-        background-image: url(images/lens.png);
-        background-size: contain;
     }
 
     .menu {
@@ -103,12 +104,12 @@ main {
 
     .mail , .address ,  .number  {
         border-bottom: solid 1px #a4a4a4;
-        margin-top: 10px;
+        margin-top: 20px;
         padding-bottom: 10px;
         font-size: 15px;
         line-height: 15px;
 
-}
+    }
 
     .img-mail , .img-address , .img-number {
         width: 20px;

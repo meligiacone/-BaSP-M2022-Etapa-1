@@ -202,3 +202,14 @@
     text-decoration: none;
     color: #373867;
 }
+
+/* For  Laptop and Desktop */
+
+@media (min-width: 768px) {
+  
+    main {
+        margin-left: 25%;
+        width: 75%;
+    }
+
+}

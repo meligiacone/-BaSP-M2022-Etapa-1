@@ -13,3 +13,42 @@
         flex-direction: column;
     }
     }
+
+/* For Desktop */
+
+@media (min-width: 900px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-len {
+        margin-top: 27px;
+    }
+
+    .input-search
+    {  
+        width: 200px;
+        height: 32px;
+        margin-top: 20px;
+    }
+
+    .touch {
+        margin-top: 30px;
+    }
+
+    .mail , .address ,  .number  {
+        line-height: 25px;
+    }
+
+    .touch > p {
+        margin-top: 25px;
+    }
+
+    .img-mail , .img-address , .img-number {
+        padding-right: 6px ;
+    }
+    
+    }
+    
+

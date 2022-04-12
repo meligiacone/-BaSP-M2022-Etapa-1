@@ -32,6 +32,21 @@ h1 {
     header {
         margin-left: 25%;
         width: 75%;
+        background-color: #ffffff;
     }
+
+    h1 {
+        margin-left: 15px;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .icon img {
+        width:40px;
+        margin-top: 10px;
+    }
+
+}
 
 

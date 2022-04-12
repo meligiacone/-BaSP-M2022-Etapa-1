@@ -24,3 +24,13 @@ footer p {
     align-self: center;
     margin-top: 10px;
 }
+
+@media (min-width: 768px) {
+
+    footer {
+        margin-left: 25%;
+        width: 75%;
+        background-color: #ededed;
+    }
+
+}

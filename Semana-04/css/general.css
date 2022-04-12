@@ -21,6 +21,10 @@ main {
 /* Sidebar */
 
     aside {
+        display: none;
+    }
+
+    aside {
     position:fixed;
     width: 25vw;
     height: 100vh;

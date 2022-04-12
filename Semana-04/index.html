@@ -87,22 +87,35 @@
                     </div>
                 </aside>
             </div>
-            
-                <main>
-                    <div>
-                    <section class="welcome">
-                        <div class="welcome-tittle">
+            <main>
+                <section class="welcome">
+                    <div class="welcome-tittle">
                         <h2>Welcome to Trackgenix!</h2>
-                        </div>
+                    </div>
                     <div class="welcome-img">
                         <h3>A free website for everyone at Trackgenix!</h3>
-                        <img src="images/clock.png" alt="clock">
+                        <img class="img-clock" src="images/clock.png" alt="clock">
                     </div>
                         <p class="introduction">
                             Here, you can register the hours worked in any project for all employees,generate reports and much more.
                         </p>
+                        </div>
                         <input type="button" value="LEARN MORE">
-                    
+                    </section>
+                    <section class="welcome-for-desktop">
+                        <div class="welcome-text-img">
+                        <div class="welcome-text">
+                            <h2>Welcome to Trackgenix!</h2>
+                            <h3>A free website for everyone at Trackgenix!</h3>
+                            <p class="introduction">
+                                Here, you can register the hours worked in any project for all employees,generate reports and much more.
+                            </p>
+                            <input type="button" value="LEARN MORE">
+                        </div>
+                        <div class="welcome-img">
+                            <img class="img-clock" src="images/clock.png" alt="clock">
+                        </div>
+                        </div>
                     </section>
                     <section class="what-can-you-do">
                         <h2>What can you do?</h2>
@@ -158,6 +171,7 @@
                         <h2>Contact Form</h2>
                         <div class="form-flex-container">
                         <form id="contact-form">
+                            <div class="first-row">
                             <div class="content-form">
                                 <label class="label-bname" for="bname">Bussines name:</label>
                                 <input class="text-input-form" type="text" name="bname">
@@ -166,7 +180,9 @@
                                 <label class="label-email" for="email">Email:</label>
                                 <input class="text-input-form" type="email" name="email">
                             </div>
-                            <div class="content-form">
+                            </div>
+                            <div class="second-row">
+                            <div class="content-form-area">
                                 <p class="contact-area-p">Contact area</p>
                                 <div>
                                     <input class="radio-input" type="radio" name="contact-area" value="hresources">
@@ -184,6 +200,7 @@
                             <div class="content-form">
                                 <label class="label-number" for="number">Phone number:</label>
                                 <input class="text-input-form" type="tel" id="number" name="number">
+                            </div>
                             </div>
                             <div class="content-form">
                                 <label class="label-msg" for="msg">Message:</label>
@@ -219,7 +236,7 @@
                             </p>
                         </div>
                     </section>
-                    <nav>
+                    <nav class="container-nav-bar">
                         <div class="nav-bar">
                             <h4>Products</h4>
                             <ol>

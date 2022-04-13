@@ -1,10 +1,11 @@
 #contact-form {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 380px;
     height: 610px;
     margin-top: 36px;
 }
-
 
 /* Section: Welcome */
 
@@ -41,8 +42,9 @@
 }
 
 .welcome input {
-        width: 30%;
-        padding: 12px 14px;
+        width: 200px;
+        height: 40px;
+        padding: 12px 12px;
         margin-left: 24px;
         background-color: #AACE9B;
         border-radius: 4px;
@@ -111,13 +113,6 @@
 
 /* Section: Contact Form */
 
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .text-input-form {
     width: 317px;
     height: 43px;
@@ -136,7 +131,7 @@
     color: #000;
 }
 
-.content-form , .content-form-area{
+.content-form , .content-form-area {
     margin-top: 25px;
 }
 
@@ -200,6 +195,13 @@
     color: #373867;
 }
 
+
+@media (min-width: 0px) { 
+    .welcome-for-desktop {
+        display: none;
+    }
+
+
 /* For  Laptop */
 
 
@@ -238,48 +240,49 @@
         flex-wrap: wrap;
     }
 
-    .welcome-text-img{
+    .welcome-text-img {
         display: flex;
         flex:1;
         flex-wrap: wrap;
     }
 
-    .welcome-text{
+    .welcome-text {
         display: flex;
         flex-direction: column;
         flex:1;
         margin-left: 10px;
     }
 
-    .welcome-img{
+    .welcome-img {
         display: flex;
         width: 40%;
     }
 
     .welcome-text h2 {
         
+        margin-left: 25px;
         padding: 40px 0;
         font-size: 50px;
         font-weight: bold;
         font-weight: 700;
-        margin-left: 25px;
-        }
+    }
 
-        .welcome-text  h3{
-        font-size: 28px;
-        font-style: italic;
+        .welcome-text  h3 {
         width: 220px;
         margin-left: 25px;
-        }
+        font-size: 28px;
+        font-style: italic;
+       
+    }
 
         .welcome-text p {
             font-size: 20px;
-        }
+    }
 
         .img-clock {
             width: 300px;
 
-        }
+    }
         
         .welcome-text input {
             width: 30%;
@@ -326,13 +329,13 @@
         height: 200px;
     }
 
-    .container-nav-bar{
+    .container-nav-bar {
         display: flex;
         flex-direction: row;
     }
 
-    .nav-bar{
+    .nav-bar {
         flex: 1;
     }
 
-}    
+}

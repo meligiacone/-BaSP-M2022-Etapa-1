@@ -51,8 +51,7 @@ main {
         z-index: 1;
     }
 
-    .input-search
-    {  
+    .input-search {  
         width: 150px;
         height: 30px;
         margin-left: 15px;
@@ -76,8 +75,8 @@ main {
     }
 
     .home , .sign-up , .log-in {
-            border-bottom: solid 1px #a4a4a4;
-            font-size: 18px; 
+        border-bottom: solid 1px #a4a4a4;
+        font-size: 18px; 
     }
 
     .home a , .sign-up a , .log-in a , .mail a , .address a , .number a {
@@ -95,10 +94,10 @@ main {
     }
 
     .touch > span {
+        padding-bottom: 10px;
         border-bottom: 3px solid #AACE9B;
         font-size: 18px;
         font-weight: bold;
-        padding-bottom: 10px;
     }
 
     .touch > p {
@@ -107,9 +106,9 @@ main {
     }
 
     .mail , .address ,  .number  {
-        border-bottom: solid 1px #a4a4a4;
         margin-top: 20px;
         padding-bottom: 10px;
+        border-bottom: solid 1px #a4a4a4;
         font-size: 15px;
         line-height: 15px;
 

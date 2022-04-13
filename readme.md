@@ -9,9 +9,15 @@ Trackgenix is a project belongs to Trackgenix SA company. This project consists 
 HTML code was write to made the Landing Page structure.
 
 
-## Week 02
+## Week 03
 
 CSS was made to give style to the web, corresponding to the HTML structure.
+
+## Week 04
+
+Css was made to give a responsive style to the web for different screen sizes, corresponding to the HTML structure.
+
+Create a link for GitHun Pages: https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-04
 
 
 ## Installation

@@ -19,6 +19,10 @@ Css was made to give a responsive style to the web for different screen sizes, c
 
 Create a link for GitHun Pages: https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-04
 
+## Week 05
+
+On this week, we worked on exercises from Free Code Camp page to practice and learn Javascript. 
+
 
 ## Installation
 This software does not need to be installed, since it is running online.

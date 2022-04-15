@@ -21,7 +21,9 @@ Create a link for GitHun Pages: https://meligiacone.github.io/-BaSP-M2022-Etapa-
 
 ## Week 05
 
-On this week, we worked on exercises to pratcise Javascript. 
+On this week, we worked on exercises to practise Javascript. 
+
+https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-05
 
 
 ## Installation

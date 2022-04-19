@@ -20,7 +20,7 @@
     font-size: 30px;
     font-weight: bold;
     font-weight: 700;
-    }
+}
 
 .welcome h3{
         margin-left: 15px;
@@ -28,7 +28,7 @@
         font-style: italic;
         flex-grow: 1;
         line-height: 112%;
-    }
+}
 
 .welcome p {
         font-weight: 300;
@@ -169,7 +169,6 @@
 
 /* Section: Trackgenix History and navigation bar */
 
-
 .history-img , .content-data , .content-effective {
     display: none;
 }
@@ -195,15 +194,12 @@
     color: #373867;
 }
 
-
 @media (min-width: 0px) { 
     .welcome-for-desktop {
         display: none;
     }
 
-
 /* For  Laptop */
-
 
 @media (min-width: 768px) {
   
@@ -224,7 +220,6 @@
     }
 
 }
-
 
 /* For  Desktop */
 
@@ -271,8 +266,7 @@
         width: 220px;
         margin-left: 25px;
         font-size: 28px;
-        font-style: italic;
-       
+        font-style: italic;  
     }
 
         .welcome-text p {
@@ -281,7 +275,6 @@
 
         .img-clock {
             width: 300px;
-
     }
         
         .welcome-text input {
@@ -337,5 +330,4 @@
     .nav-bar {
         flex: 1;
     }
-
 }

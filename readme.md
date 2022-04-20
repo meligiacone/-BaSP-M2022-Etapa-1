@@ -17,7 +17,7 @@ CSS was made to give style to the web, corresponding to the HTML structure.
 
 Css was made to give a responsive style to the web for different screen sizes, corresponding to the HTML structure.
 
-Create a link for GitHun Pages: https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-04/html.html
+Create a link for GitHun Pages: https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-04/index.html
 
 ## Week 05
 

@@ -1,6 +1,7 @@
 console.log('--EXERCISE 3: ARRAYS');
 
-// a .  Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).
+/* a .  Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+"Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).*/
 
 console.log('-Exercise 3. a:');
 
@@ -8,7 +9,7 @@ var months = ['January', 'February', 'March', 'April', 'May' , 'June', 'July' , 
 
 console.log(months[4] , months[10] );
 
-// b . Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
+/* b . Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort). */
 
 console.log('-Exercise 3. b:');
 

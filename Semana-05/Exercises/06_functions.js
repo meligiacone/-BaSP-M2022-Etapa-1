@@ -1,6 +1,7 @@
 console.log('--EXERCISE 6: FUNCTIONS');
 
-// a . Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador.
+/* a . Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función 
+y guardar el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador. */
 
 console.log('-Exercise 6. a:');
 
@@ -10,7 +11,8 @@ function adittion(num1,num2) {
 
 console.log(adittion(20,25));
 
-// b . A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado.
+/* b . A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es 
+un número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado.*/
 
 console.log('-Exercise 6. b:');
 
@@ -35,7 +37,8 @@ function validateinteger(n) {
 
 console.log(validateinteger(2));
 
-// d . A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).
+/* d . A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. 
+En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado). */
 
 console.log('-Exercise 6. d:');
 
@@ -56,7 +59,8 @@ function addition(num1,num2) {
     console.log(addition("dos",4));     //one parameter is not a number
      
 
-// e . Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.
+/* e . Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función
+ suma probando que todo siga funcionando igual. */
 
 console.log('-Exercise 6. e:');
 

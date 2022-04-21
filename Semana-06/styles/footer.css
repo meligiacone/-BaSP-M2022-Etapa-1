@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: #ededed;
+    border-top: 5px solid #aace9b;
+}
+
+footer p {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 10px;
+    color: #545454;
+    line-height: 20px;
+}
+
+.social-media-img {
+    width: 25px;
+    margin-left: 20px;
+}
+
+.social-media {
+    align-self: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+    footer {
+        margin-left: 25%;
+        width: 75%;
+        background-color: #ededed;
+    }
+
+}

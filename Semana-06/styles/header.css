@@ -1,0 +1,67 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    background-color: #EDEDED;
+    border-bottom: 5px solid #aace9b;
+    }
+
+h1 {
+    margin-left: 17px;
+    font-size: 40px;
+    font-weight: bold;
+    font-weight: 700;
+    color: #373867;    
+}
+
+
+.brand {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+.icon img {
+    margin-left: 26px;
+    cursor: pointer;
+}
+
+/* For  Laptop */
+
+@media (min-width: 768px) {
+    header {
+        margin-left: 25%;
+        width: 75%;
+        background-color: #ffffff;
+    }
+
+    h1 {
+        margin-left: 15px;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    .icon img {
+        width:40px;
+        margin-top: 10px;
+    }
+
+}
+
+/* For  Desktop */
+
+@media (min-width: 900px) {
+    
+    header {
+        border-bottom: none; 
+    }
+
+    h1 {
+        width: 700px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #aace9b;
+    }
+    
+}
+

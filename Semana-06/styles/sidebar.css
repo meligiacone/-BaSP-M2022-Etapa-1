@@ -1,0 +1,147 @@
+/* Sidebar */
+
+aside {
+    display: none;
+    }
+
+aside {
+position:fixed;
+width: 25vw;
+height: 100vh;
+background-color: #FAFAFA;
+border:1px solid #000000;
+font-family: 'Raleway', sans-serif;
+color: #373867;
+    }
+
+.container-sidebar {
+    display: flex;
+    flex-direction: column;
+    }
+
+.search > input::placeholder {
+    padding-left: 20px ;
+    }
+
+.img-len {
+    position: absolute;
+    width: 20px;
+    margin-top: 17px;
+    margin-left: 15px;
+    z-index: 1;
+    }
+
+.input-search {  
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    }
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 20px;
+    line-height: 40px;
+    }
+.menu > p {
+    border-bottom: 3px solid #AACE9B;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+.home , .sign-up , .log-in {
+    border-bottom: solid 1px #a4a4a4;
+    font-size: 18px; 
+    }
+
+.home a , .sign-up a , .log-in a , .mail a , .address a , .number a {
+    text-decoration: none;
+    color: #373867;
+    }
+
+.touch {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 20px;
+    line-height: 20px;
+    }
+
+.touch > span {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #AACE9B;
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+.touch > p {
+    font-size: 16px;
+    margin-top: 15px;
+    }
+
+.mail , .address ,  .number  {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #a4a4a4;
+    font-size: 15px;
+    line-height: 15px;
+
+    }
+
+.img-mail , .img-address , .img-number {
+    width: 20px;
+    height: 15px;
+    padding-right: 2px ;
+    }
+
+
+/* For Tablet */
+
+@media (min-width: 768px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* For Desktop */
+
+@media (min-width: 900px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-len {
+        margin-top: 27px;
+    }
+
+    .input-search {  
+        width: 200px;
+        height: 32px;
+        margin-top: 20px;
+    }
+
+    .touch {
+        margin-top: 30px;
+    }
+
+    .mail , .address ,  .number  {
+        line-height: 25px;
+    }
+
+    .touch > p {
+        margin-top: 25px;
+    }
+
+    .img-mail , .img-address , .img-number {
+        padding-right: 6px ;
+    }
+}
+

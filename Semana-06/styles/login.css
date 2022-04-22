@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+    height: 80vh;
+    padding-top: 70px;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;
+}
+
+main p {
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+.content-sign-in-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-row {
+    display: flex;
+    margin-top: 40px;
+}
+
+.label-email , .label-password {
+    margin-top: 60px;
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 700;
+    color: #373867;
+}
+
+.label-password {
+    margin-left: 20px;
+}
+
+.text-input-form-password , .text-input-form-email   {
+    align-self: center;
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.forgot-password , .check-box-label{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.forgot-password {
+    margin-left: 40px;
+}
+
+.forgot-password a {
+    color:#373867
+}
+
+.content-row {
+    margin-left: 20px;
+}
+
+.submit-form {
+    align-self: flex-start;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 70px;
+    border-radius: 4px;
+    background-color: #AACE9B;
+    font-size: 22px;
+    color: #373867;
+}
+

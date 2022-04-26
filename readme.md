@@ -25,11 +25,11 @@ On this week, we worked on exercises to practise Javascript.
 
 https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-05/index.html
 
-## Week 05
+## Week 06
 
 On this week, we will develop the following screens: login and employee signup. The screens wil be created following the Screenflow made in Week 01 on Figma. Will work with html, css, javascript to develop the screens with the requirements made by the tutors to make it work and solve the weekly problem.
 
-https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-06/index.html
+https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
 
 ## Installation

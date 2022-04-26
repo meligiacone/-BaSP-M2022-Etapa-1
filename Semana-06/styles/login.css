@@ -1,3 +1,25 @@
+#email , #password  {
+    align-self: center;
+    width: 250px;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    border: 1px solid #373867;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#submit {
+    align-self: flex-start;
+    width: 250px;
+    margin-left: 30px;
+    margin-top: 70px;
+    border-radius: 4px;
+    background-color: #AACE9B;
+    font-size: 22px;
+    color: #373867;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -38,17 +60,6 @@ main p {
     margin-left: 20px;
 }
 
-.text-input-form-password , .text-input-form-email   {
-    align-self: center;
-    width: 250px;
-    height: 30px;
-    margin-top: 5px;
-    padding-left: 5px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
 .forgot-password , .check-box-label{
     font-size: 14px;
     font-style: italic;
@@ -66,14 +77,26 @@ main p {
     margin-left: 20px;
 }
 
-.submit-form {
-    align-self: flex-start;
-    width: 250px;
-    margin-left: 30px;
-    margin-top: 70px;
-    border-radius: 4px;
-    background-color: #AACE9B;
-    font-size: 22px;
-    color: #373867;
+.correct {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #008000;
 }
 
+.invalid {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #ff0000;
+}
+
+#submit-box , #submit-box1 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-style: italic;
+    color: #373867;
+}

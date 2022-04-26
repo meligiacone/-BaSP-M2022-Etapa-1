@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="melinabgiacone@gmail.com">
         <link rel="stylesheet" href="../styles/reset.css">
-        <link rel="stylesheet" href="../styles/general.css">
+        <link rel="stylesheet" href="../styles/landing.css">
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/sidebar.css">
         <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="../styles/footer.css">
         <link rel="stylesheet" href="../styles/login.css">
+        <script src="../javascript/login.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -58,13 +59,13 @@
                 <p>Menu</p>
                 <ul>
                     <li class="home">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="sign-up">
-                        <a href="#">Sign up</a>
+                        <a href="sign-up.html">Sign up</a>
                     </li>
                     <li class="log-in">
-                        <a href="#">Log in</a>
+                        <a href="login.html">Log in</a>
                     </li>
                 </ul>
             </div>
@@ -94,12 +95,14 @@
             <p>Log in</p>
             <form class="sign-in-form">
                 <div class="content-sign-in-form">
-                    <label class="label-email" for="email">Email:</label>
-                    <input class="text-input-form-email" placeholder="email" type="email" name="email">
+                    <label class="label-email">Email:</label>
+                    <input id="email" placeholder="Email" type="text">
+                    <div class="message"></div>
                 </div>
                 <div class="content-sign-in-form">
-                    <label class="label-password" for="password">Password:</label>
-                    <input class="text-input-form-password" placeholder="password" type="password" name="password">
+                    <label class="label-password">Password:</label>
+                    <input id="password" placeholder="Password" type="password">
+                    <div class="message"></div>
                 </div>
                 <div class="content-row">
                     <div class="box-checkbox">
@@ -111,7 +114,9 @@
                     </div>
                 </div>
                 <div class="content-sign-in-form">
-                    <input class="submit-form" type="submit" value="LOG IN">
+                    <input id="submit" type="submit" value="LOG IN">
+                    <div id="submit-box"></div>
+                    <div id="submit-box1"></div>
                 </div>
             </form>
         </main>

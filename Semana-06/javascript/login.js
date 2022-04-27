@@ -13,7 +13,7 @@ window.onload = function(){
             messageAlert[0].innerHTML = 'Email is valid';
         } else if (!inputEmail.value.match(regExp)) {
             messageAlert[0].classList.add('invalid');
-            messageAlert[0].innerHTML = 'Must enter a valid format email';
+            messageAlert[0].innerHTML = 'Must enter a valid email format';
         }
     }
 
@@ -31,6 +31,20 @@ window.onload = function(){
         var spaces = false;
         var cont = 0;
         var p = inputPassword.value;
+        var numbers = '0123456789';
+        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        var allowed = '0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        var justNumbers = true;
+        var justLetters = true;
+        var isAlphanumeric = true;
+
+
+        p.split('').forEach(function(letter) {
+            if (allowed.indexOf(letter) == -1) isAlphanumeric = false;
+            if (numbers.indexOf(letter) == -1) justNumbers = false;
+            if (letters.indexOf(letter) == -1) justLetters = false;
+        });
+
 
         while (!spaces && (cont < p.length)) {
         if (p.charAt(cont) == ' ')
@@ -38,16 +52,15 @@ window.onload = function(){
         cont ++;
         };
         
-        if (inputPassword.value.length > 8) {
-         if (spaces) {
+        if (isAlphanumeric && !justNumbers && !justLetters && p.length >= 8) {
+            messageAlert[1].classList.add('correct');
+            messageAlert[1].innerHTML = 'Password is valid';
+        } else if (spaces) {
                 messageAlert[1].classList.add('invalid');
                 messageAlert[1].innerHTML = 'Password cannot have blank spaces'; 
             } else {
-                messageAlert[1].classList.add('correct');
-                messageAlert[1].innerHTML = 'Password is valid';
-            } } else {
                 messageAlert[1].classList.add('invalid');
-                messageAlert[1].innerHTML = 'Password must have more than 8 characters';
+                messageAlert[1].innerHTML = 'Must enter a valid password format';
             }
     }
 

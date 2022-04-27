@@ -408,26 +408,25 @@ window.onload = function(){
             var phone = inputPhone[0].value;
             var address = inputAddress[0].value;
             var city = inputCity[0].value;
-            var cp = inputPc[0].value;
+            var cp = inputPc[0].value; 
             var email = inputMail[0].value;
             var pass = inputPas[0].value;
             var repeatpass = inputRepeatpas[0].value;
-
 
             if ((name.length != 0) && (surname.length != 0) && (id.length != 0)
             && (date.length != 0) && (phone.length != 0) && (address.length != 0)
             && (city.length != 0) && (cp.length != 0) && (email.length != 0) &&
             (pass.length != 0) && (repeatpass.length != 0)) {
-                alert('Full name: '+name+' '+surname+'   Id: '+id+'   Date of birth: '+date+'Phone number: '+phone+'   Address: '+
-                address+'   City: '+city+'   Postal code: '+cp+'   Email: '+
-                email+'  Password: '+pass);
+                alert ('Login successfull');
+                alert('Full name: '+name+' Surname: '+surname+' Id: '+id+' Date of birth: '+date+' Phone number: '+phone+' Address: '+address+' City: '+city+' Postal code: '+cp+' Email: '+
+                email+' Password: '+pass+'');
             } else {
-                alert('The validation was not success');
+                alert('Validation was not success');
             }
         }
-
-        inputbutton[0].onclick = function() {
-            validateSubmit();
-        };
+        
+            inputbutton[0].onclick = function() {
+                validateSubmit();
+            }        
         
 }

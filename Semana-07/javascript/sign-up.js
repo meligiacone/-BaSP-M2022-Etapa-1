@@ -13,12 +13,13 @@ window.onload = function(){
     var inputPas = document.getElementsByClassName('form-password');
     var inputRepeatpas = document.getElementsByClassName('form-repeat');
     var inputbutton = document.getElementsByClassName('button-submit');
+    var allowed = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+    var numbers = '0123456789';
+    var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
 
     //VALIDATE NAME
 
     function validateName() {
-        var numbers = '0123456789';
-        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
         var nameValue = inputName[0].value;
         var justNumbers = true;
         var justLetters = true;
@@ -52,8 +53,6 @@ window.onload = function(){
     //VALIDATE SURNAME
 
     function validateSurname() {
-        var numbers = '0123456789';
-        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
         var surnameValue = inputSurname[0].value;
         var justNumbers = true;
         var justLetters = true;
@@ -87,8 +86,6 @@ window.onload = function(){
     //VALIDATE ID
 
     function validateId() {
-        var numbers = '0123456789';
-        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
         var idValue = inputId[0].value;
         var justNumbers = true;
         var justLetters = true;
@@ -150,8 +147,6 @@ window.onload = function(){
         //VALIDATE PHONE NUMBER
 
         function validatePhone() {
-            var numbers = '0123456789';
-            var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
             var phoneValue = inputPhone[0].value;
             var justNumbers = true;
             var justLetters = true;
@@ -185,9 +180,6 @@ window.onload = function(){
         //VALIDATE ADDRESS
 
         function validateAddress() {
-            var allowed = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-            var numbers = '0123456789';
-            var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
             var addressValue = inputAddress[0].value;
             var isAlphanumeric = true;
             var justNumbers = true;
@@ -222,10 +214,7 @@ window.onload = function(){
 
         //VALIDATE CITY
 
-        function validateAddress() {
-        var allowed = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-        var numbers = '0123456789';
-        var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
+        function validateCity() {
         var cityValue = inputCity[0].value;
         var isAlphanumeric = true;
         var justNumbers = true;
@@ -244,12 +233,12 @@ window.onload = function(){
             inputMessage[6].innerHTML = 'Field is required';
         } else {
             inputMessage[6].classList.add('invalid');
-            inputMessage[6].innerHTML = 'Must enter a valid address format';
+            inputMessage[6].innerHTML = 'Must enter a valid city format';
         }
     };
 
         inputCity[0].onblur = function() {
-            validateAddress();
+            validateCity();
         }
 
         inputCity[0].onfocus = function() {
@@ -263,8 +252,6 @@ window.onload = function(){
 
 
         function validatePc() {
-            var numbers = '0123456789';
-            var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
             var pcValue = inputPc[0].value;
             var justNumbers = true;
             var justLetters = true;
@@ -323,9 +310,6 @@ window.onload = function(){
 
 
         function validatePassword() {
-            var allowed = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-            var numbers = '0123456789';
-            var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
             var passwordValue = inputPas[0].value;
             var isAlphanumeric = true;
             var justNumbers = true;
@@ -362,9 +346,6 @@ window.onload = function(){
         
 
         function validateRepeat() {
-            var allowed = ' 0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
-            var numbers = '0123456789';
-            var letters = 'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ';
             var repeatValue = inputRepeatpas[0].value;
             var isAlphanumeric = true;
             var justNumbers = true;

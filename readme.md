@@ -31,6 +31,12 @@ On this week, we will develop the following screens: login and employee signup. 
 
 https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-06/views/index.html
 
+## Week 07
+
+The forms from week 06 must be extended so that pressing the confirmation buttons sends the data, such as query-params, loaded in them to a web server through an HTTP request from JavaScript, using the Fetch method.
+
+https://meligiacone.github.io/-BaSP-M2022-Etapa-1/Semana-07/views/index.html
+
 
 ## Installation
 

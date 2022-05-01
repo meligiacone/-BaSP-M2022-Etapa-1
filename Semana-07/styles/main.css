@@ -1,0 +1,334 @@
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 610px;
+    margin-top: 36px;
+}
+
+/* Section: Welcome */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome h2 {
+    align-self: center;
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+.welcome h3{
+        margin-left: 15px;
+        font-size: 28px;
+        font-style: italic;
+        flex-grow: 1;
+        line-height: 112%;
+}
+
+.welcome p {
+        font-weight: 300;
+        font-size: 24px;
+        color: #afafc2;
+}
+
+.img-clock {
+    width: 30%;
+    margin-right: 29px;
+}
+
+.welcome input {
+        width: 200px;
+        height: 40px;
+        padding: 12px 12px;
+        margin-left: 24px;
+        background-color: #AACE9B;
+        border-radius: 4px;
+        border: 1px solid #373867;
+        font-size: 16px;
+}
+
+.welcome-tittle {
+    align-self: center;
+    margin-top: 32px;
+}
+
+.welcome-img {
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    margin: 23px 52px 23px 23px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #afafc2;
+    line-height: 150%;
+}
+
+/* Section: What can you do? */
+
+.content-box , .content-tittle-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box img {
+    width: 25%;
+    margin-top: 38px;
+    margin-bottom: 17px;
+}
+
+.content-tittle-p p {
+    margin: 7px 18px 27px 18px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 115%;
+}
+
+.content-tittle-p > h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Section: Why use Trackgenix ? */
+
+.list-box-1 {
+    margin-top: 24px;
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 23px;
+    list-style-type: '✓';
+}
+
+.list-item-box-1 {
+    padding-left: 20px;
+    padding-top: 23px;
+}
+
+/* Section: Contact Form */
+
+.text-input-form {
+    width: 317px;
+    height: 43px;
+    margin: 5px 20px 0px 20px;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+    font-size: 25px;
+}
+
+.label-bname , .label-email , .contact-area-p , .label-msg , .label-number {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+.content-form , .content-form-area {
+    margin-top: 25px;
+}
+
+.radio-input {
+    margin-left: 20px;
+}
+
+.radio-label {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+}
+
+.textarea-msg {
+    width: 317px;
+    height: 111px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+}
+
+.submit-form {
+    width: 95px;
+    height: 42px;
+    margin-left: 140px;
+    margin-top: 10px;
+    background-color: #AACE9B;
+    border-radius: 2px;
+    border: 1px solid #373867;
+    font-size: 18px;
+}
+
+/* Section: Trackgenix History and navigation bar */
+
+.history-img , .content-data , .content-effective {
+    display: none;
+}
+
+.history-p {
+    margin-top: 23px;
+    margin-left: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar ol li {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    list-style-type: decimal;
+}
+
+.nav-bar ol li a {
+    text-decoration: none;
+    color: #373867;
+}
+
+@media (min-width: 0px) { 
+    .welcome-for-desktop {
+        display: none;
+    }
+
+/* For  Laptop */
+
+@media (min-width: 768px) {
+  
+    main {
+        width: 75%;
+        margin-left: 25%;
+        
+    }
+
+    .contain-what-can-you-do {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content-box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+}
+
+/* For  Desktop */
+
+@media (min-width: 900px) {
+
+    .welcome {
+        display: none;
+    }
+
+    .welcome-for-desktop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .welcome-text-img {
+        display: flex;
+        flex:1;
+        flex-wrap: wrap;
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        margin-left: 10px;
+    }
+
+    .welcome-img {
+        display: flex;
+        width: 40%;
+    }
+
+    .welcome-text h2 {
+        
+        margin-left: 25px;
+        padding: 40px 0;
+        font-size: 50px;
+        font-weight: bold;
+        font-weight: 700;
+    }
+
+        .welcome-text  h3 {
+        width: 220px;
+        margin-left: 25px;
+        font-size: 28px;
+        font-style: italic;  
+    }
+
+        .welcome-text p {
+            font-size: 20px;
+    }
+
+        .img-clock {
+            width: 300px;
+    }
+        
+    .welcome-text input {
+        width: 30%;
+        padding: 12px 14px;
+        margin-left: 24px;
+        background-color: #AACE9B;
+        border-radius: 4px;
+        border: 1px solid #373867;
+        font-size: 16px;
+    }
+
+    .content-box {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content-tittle-p {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .content-tittle-p  p , .content-tittle-p  h3 {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    #contact-form {
+        margin-left: 25%;
+    }
+
+    .first-row , .second-row {
+        display: flex;
+    }
+
+    .content-form-area {
+        margin-left: 60px;
+        width: 400px;
+        height: 150px;
+    }
+
+    .textarea-msg {
+        width: 670px;
+        height: 200px;
+    }
+
+    .container-nav-bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        flex: 1;
+    }
+}

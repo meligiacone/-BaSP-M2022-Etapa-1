@@ -345,28 +345,17 @@ window.onload = function(){
         //VALIDATE REPEAT PASSWORD
         
 
-        function validateRepeat() {
-            var repeatValue = inputRepeatpas[0].value;
-            var isAlphanumeric = true;
-            var justNumbers = true;
-            var justLetters = true;
+        function validateRepeat(pas,rePas) {
+                var pas = inputPas[0].value;
+                var rePas = inputRepeatpas[0].value;
 
-            repeatValue.split('').forEach(function(letter) {
-                if (allowed.indexOf(letter) == -1) isAlphanumeric = false;
-                if (numbers.indexOf(letter) == -1) justNumbers = false;
-                if (letters.indexOf(letter) == -1) justLetters = false;
-            });
-
-            if (isAlphanumeric && !justNumbers && !justLetters && repeatValue.length >= 8){
-                inputMessage[10].classList.add('validate');
-            } else if (repeatValue.length == 0) {
-                inputMessage[10].classList.add('invalid');
-                inputMessage[10].innerHTML = 'Field is required';
-            } else {
-                inputMessage[10].classList.add('invalid');
-                inputMessage[10].innerHTML = 'Must enter a valid password format';
+                if (pas == rePas) {
+                    inputMessage[10].classList.add('validate');
+                } else {
+                    inputMessage[10].classList.add('invalid');
+                    inputMessage[10].innerHTML = 'Must match with password';
+                }
             }
-        };
 
         inputRepeatpas[0].onblur = function() {
             validateRepeat();
@@ -466,17 +455,16 @@ window.onload = function(){
                         if (jsonResponse.success) {
                             myStorage();
                             var ok =
-                             inputName[0].value +
-                            inputSurname[0].value +
-                            inputId[0].value +
-                            inputDate[0].value +
-                            inputPhone[0].value +
-                            inputAddress[0].value +
-                            inputCity[0].value +
-                            inputPc[0].value +
-                            inputMail[0].value +
-                            inputPas[0].value ;
-                            
+                            ' Name: ' + inputName[0].value +
+                            ' Surname : '+ inputSurname[0].value +
+                            ' Id: ' + inputId[0].value +
+                            ' Date of birth: '+ inputDate[0].value +
+                            ' Phone: ' +inputPhone[0].value +
+                            ' Address: '+inputAddress[0].value +
+                            ' City: ' +inputCity[0].value +
+                            ' Postal code: '+inputPc[0].value +
+                            ' Email: '+inputMail[0].value +
+                            ' Password: '+inputPas[0].value ;
                             alert(ok);
                         } else {
                             var sentence = ' ';
@@ -487,19 +475,19 @@ window.onload = function(){
                         }
                     })
                     .catch(function (error) {
-                            console.log('mal');
+                        alert (jsonResponse.errorMsg);
                     });
             }
 
             function myStorage() {
                 localStorage.setItem('name', inputName[0].value);
-                localStorage.setItem('surname', inputSurname[0].value);
-                localStorage.setItem('id', inputId[0].value);
+                localStorage.setItem('lastName', inputSurname[0].value);
+                localStorage.setItem('dni', inputId[0].value);
                 localStorage.setItem('date', inputDate[0].value);
                 localStorage.setItem('phone', inputPhone[0].value);
                 localStorage.setItem('address', inputAddress[0].value);
                 localStorage.setItem('city', inputCity[0].value);
-                localStorage.setItem('pc', inputPc[0].value);
+                localStorage.setItem('zip', inputPc[0].value);
                 localStorage.setItem('email', inputMail[0].value);
             }
 
@@ -529,26 +517,25 @@ window.onload = function(){
 
             //Load the data from local storage
 
-
             if (
                 localStorage.getItem('name') != null &&
-                localStorage.getItem('surname') != null &&
-                localStorage.getItem('id') != null &&
+                localStorage.getItem('lastName') != null &&
+                localStorage.getItem('dni') != null &&
                 localStorage.getItem('date') != null &&
                 localStorage.getItem('phone') != null &&
                 localStorage.getItem('address') != null &&
                 localStorage.getItem('city') != null &&
-                localStorage.getItem('pc') != null &&
+                localStorage.getItem('zip') != null &&
                 localStorage.getItem('email') != null
             ) {
-                inputName.value = localStorage.getItem('name');
-                inputSurname.value = localStorage.getItem('surname');
-                inputId.value = localStorage.getItem('id');
-                inputDate.value = localStorage.getItem('date');
-                inputPhone.value = localStorage.getItem('phone');
-                inputAddress.value = localStorage.getItem('address');
-                inputCity.value = localStorage.getItem('city');
-                inputPc.value = localStorage.getItem('pc');
-                inputMail.value = localStorage.getItem('email');
+                inputName[0].value = localStorage.getItem('name');
+                inputSurname[0].value = localStorage.getItem('lastName');
+                inputId[0].value = localStorage.getItem('dni');
+                inputDate[0].value = localStorage.getItem('date');
+                inputPhone[0].value = localStorage.getItem('phone');
+                inputAddress[0].value = localStorage.getItem('address');
+                inputCity[0].value = localStorage.getItem('city');
+                inputPc[0].value = localStorage.getItem('zip');
+                inputMail[0].value = localStorage.getItem('email');
             }
 }

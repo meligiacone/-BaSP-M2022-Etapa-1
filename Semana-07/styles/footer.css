@@ -1,17 +1,15 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
+    width: 100%;
     background-color: #ededed;
     border-top: 5px solid #aace9b;
 }
 
 footer p {
-    align-self: center;
+    text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 10px;
     color: #545454;
-    line-height: 20px;
 }
 
 .social-media-img {
@@ -20,7 +18,7 @@ footer p {
 }
 
 .social-media {
-    align-self: center;
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -29,7 +27,6 @@ footer p {
     footer {
         margin-left: 25%;
         width: 75%;
-        background-color: #ededed;
     }
 
 }

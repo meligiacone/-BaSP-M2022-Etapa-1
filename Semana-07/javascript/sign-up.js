@@ -95,7 +95,7 @@ window.onload = function(){
             if (letters.indexOf(letter) == -1) justLetters = false;
         });
 
-        if (justNumbers && !justLetters && idValue.length > 7){
+        if (justNumbers && !justLetters && idValue.length >= 7 && idValue.length <= 8){
             inputMessage[2].classList.add('validate');
         } else if (idValue.length == 0) {
             inputMessage[2].classList.add('invalid');
@@ -120,14 +120,14 @@ window.onload = function(){
 
         function validateDate() {
             var dateValue = inputDate[0].value;
-            var day = dateValue.substring(0,2);
-            var month = dateValue.substring(3,5);
+            var month = dateValue.substring(0,2);
+            var day = dateValue.substring(3,5);
             var year = dateValue.substring(6,10);
 
             if (dateValue.length !== 10 || dateValue.substring(2,3) !== '/' || dateValue.substring(5,6) !== '/' || day <= 00
-            || day > 31 || month <= 00 || month > 12 || year < 1910 || year > 2015){
+            || day > 31 || month <= 00 || month > 12 || year < 1910 || year > 2004){
                 inputMessage[3].classList.add('invalid');
-                inputMessage[3].innerHTML = 'Must enter a valid format (dd/mm/yyyy)';
+                inputMessage[3].innerHTML = 'Must enter a valid format (mm/dd/yyyy)';
             } else {
                 inputMessage[3].classList.add('validate');
             }
@@ -156,14 +156,14 @@ window.onload = function(){
             if (letters.indexOf(letter) == -1) justLetters = false;
         });
 
-        if (justNumbers && !justLetters && phoneValue.length > 10){
+        if (justNumbers && !justLetters && phoneValue.length >= 10 && phoneValue.length <= 10){
             inputMessage[4].classList.add('validate');
         } else if (phoneValue.length == 0) {
             inputMessage[4].classList.add('invalid');
             inputMessage[4].innerHTML = 'Field is required';
         } else {
             inputMessage[4].classList.add('invalid');
-            inputMessage[4].innerHTML = 'Only numbers and more than 10';
+            inputMessage[4].innerHTML = 'Must have 10 numbers';
         }
     };
 
@@ -406,8 +406,149 @@ window.onload = function(){
             }
         }
         
-            inputbutton[0].onclick = function() {
-                validateSubmit();
-            }        
-        
+            //WEEK 07
+
+            //API request
+
+            function myRequest(
+                name,
+                surname,
+                id,
+                date,
+                phone,
+                address,
+                city,
+                pc,
+                email,
+                pass,
+                url,
+            ) {
+                var name = inputName[0].value;
+                var surname = inputSurname[0].value;
+                var id = inputId[0].value;
+                var date = inputDate[0].value;
+                var phone = inputPhone[0].value;
+                var address = inputAddress[0].value;
+                var city = inputCity[0].value;
+                var pc = inputPc[0].value; 
+                var email = inputMail[0].value;
+                var pass = inputPas[0].value;
+                var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+                fetch(
+                    url +
+                        '?name=' +
+                        name +
+                        '&lastName=' +
+                        surname +
+                        '&dni=' +
+                        id +
+                        '&dob=' +
+                        date +
+                        '&phone=' +
+                        phone +
+                        '&address=' +
+                        address +
+                        '&city=' +
+                        city +
+                        '&zip=' +
+                        pc +
+                        '&email=' +
+                        email +
+                        '&password=' +
+                        pass
+                )
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (jsonResponse) {
+                        console.log(jsonResponse);
+                        alert(jsonResponse.msg);
+                        if (jsonResponse.success) {
+                            myStorage();
+                            var ok =
+                             inputName[0].value +
+                            inputSurname[0].value +
+                            inputId[0].value +
+                            inputDate[0].value +
+                            inputPhone[0].value +
+                            inputAddress[0].value +
+                            inputCity[0].value +
+                            inputPc[0].value +
+                            inputMail[0].value +
+                            inputPas[0].value ;
+                            
+                            alert(ok);
+                        } else {
+                            var sentence = ' ';
+                            for(var i=0;i<jsonResponse.errors.length; i++){
+                                sentence += jsonResponse.errors[i].msg + ' - ';
+                            }
+                            alert(sentence);
+                        }
+                    })
+                    .catch(function (error) {
+                            console.log('mal');
+                    });
+            }
+
+            function myStorage() {
+                localStorage.setItem('name', inputName[0].value);
+                localStorage.setItem('surname', inputSurname[0].value);
+                localStorage.setItem('id', inputId[0].value);
+                localStorage.setItem('date', inputDate[0].value);
+                localStorage.setItem('phone', inputPhone[0].value);
+                localStorage.setItem('address', inputAddress[0].value);
+                localStorage.setItem('city', inputCity[0].value);
+                localStorage.setItem('pc', inputPc[0].value);
+                localStorage.setItem('email', inputMail[0].value);
+            }
+
+            inputbutton[0].onclick = function(e) {
+                var formatDate = inputDate[0].value.split('-');
+                var newFormat =
+                formatDate.slice(1, 2) +
+                '/' +
+                formatDate.slice(2) +
+                '/' +
+                formatDate.slice(0, 1);
+                myRequest(
+                        inputName.value,
+                        inputSurname.value,
+                        inputId.value,
+                        newFormat,
+                        inputPhone.value,
+                        inputAddress.value,
+                        inputCity.value,
+                        inputPc.value,
+                        inputMail.value,
+                        inputPas.value,
+                        inputRepeatpas.value
+                    );
+                e.preventDefault();
+            }
+
+            //Load the data from local storage
+
+
+            if (
+                localStorage.getItem('name') != null &&
+                localStorage.getItem('surname') != null &&
+                localStorage.getItem('id') != null &&
+                localStorage.getItem('date') != null &&
+                localStorage.getItem('phone') != null &&
+                localStorage.getItem('address') != null &&
+                localStorage.getItem('city') != null &&
+                localStorage.getItem('pc') != null &&
+                localStorage.getItem('email') != null
+            ) {
+                inputName.value = localStorage.getItem('name');
+                inputSurname.value = localStorage.getItem('surname');
+                inputId.value = localStorage.getItem('id');
+                inputDate.value = localStorage.getItem('date');
+                inputPhone.value = localStorage.getItem('phone');
+                inputAddress.value = localStorage.getItem('address');
+                inputCity.value = localStorage.getItem('city');
+                inputPc.value = localStorage.getItem('pc');
+                inputMail.value = localStorage.getItem('email');
+            }
 }

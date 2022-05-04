@@ -475,7 +475,7 @@ window.onload = function(){
                         }
                     })
                     .catch(function (error) {
-                        alert (jsonResponse.errorMsg);
+                        console.log('error', error);
                     });
             }
 

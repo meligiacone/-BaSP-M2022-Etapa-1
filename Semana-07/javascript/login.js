@@ -4,8 +4,6 @@ window.onload = function(){
     var messageAlert = document.getElementsByClassName('message');
     var regExp = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
     var inputSubmit = document.getElementById('submit');
-    var p = inputPassword.value;
-    var em = inputEmail.value;
     
     function validateEmail() {
         if (inputEmail.value.match(regExp)) {
@@ -80,26 +78,24 @@ window.onload = function(){
         }
     }
 
-    function myRequest (em, p) {
+    //WEEK 07
 
-        var p = inputPassword.value;
-        var em = inputEmail.value;
-    
-        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
-        fetch (url + '?em=' + em + '&p=' + p)
+    function toLogin(emailValue, passwordValue,) {
+
+        var emailValue = inputEmail.value;
+        var passwordValue = inputPassword.value;
+        
+        fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + inputEmail.value
+            + '&password=' + inputPassword.value)
         .then (function(response){
             return response.json();
         })
         .then (function(jsonResponse){
             alert (jsonResponse.msg);
             if (jsonResponse.success){
-                messageAlert[0].innerHTML = em;
-                messageAlert[1].innerHTML = p;
+                alert('Email: ' + inputEmail.value + ' Password: ' + inputPassword.value )
             } else {
-                inputEmail.classList.remove('correct');
-                messageAlert[0].add('invalid');
-                inputPassword.classList.remove('correct');
-                messageAlert[1].classList.add('invalid');
+                throw jsonResponse
             }
         })
         .catch(function(error){
@@ -107,12 +103,10 @@ window.onload = function(){
         })
     }
 
-    inputSubmit.onclick = function(e) {
-        validateSubmit();
-        myRequest(em, p);
+    inputSubmit.onclick= function(e) {
+        toLogin(inputEmail.value, inputPassword.value);
         e.preventDefault();
     }
-
 
 }
 
